@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            }
+            body{
+                background: #000000 ;
+            }
+            .ajil{
+                width: 80%;
+                margin: 80px auto;
+            }
+            .ajil h1{
+                padding: 60px 0;
+                color: #fff;
+                font-size: 44px;
+                text-align: center;
+            }
+            .zurag{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                
+                
+            }
+            .zurg{
+                flex-basis: 50%;
+                min-width: 250px;
+
+            }
+            .img{
+                width: 83%;
+                margin: auto;
+                position: relative;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+            .small-img-zurag{
+                display: flex;
+                background: #efefef;
+                margin: 20px 0;
+                align-items: center;
+                border-radius: 6px;
+                overflow: hidden;
+                width: 85%;
+            }
+            .small-img{
+                position: relative;
+            }
+            .small-img img{
+                width: 150px;
+            }
+            .small-img-zurag p{
+                margin-left: 20px;
+                color: #707070;
+                line-height: 22px;
+                font-size: 15px;
+            }
+            .img:hover {
+                transform: scale(1);
+            }
+
+            .video-link {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .video-link p {
+                text-align: center;
+                margin-top: 5px;
+            }
+
+            video {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 5px;
+                align-items: center;
+            }
+
+
+            @media (max-width: 700px) {
+                .zurg {
+                    width: 100%;
+                }
+              }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ajil">
+        <h1>How to make a video gallery</h1>
+        <div class="zurag">
+            <div class="zurg">
+                <div class="video-link"><a href="#"></a>
+                <div class="img">
+                    <img src="maxresdefault.jpg" width="100%">
+                    <video width="800" height="600" controls>
+                        <source src="Nike - Running Isn't Just Running _ Spec Ad.mp4" type="video/mp4">
+                       
+                </div>
+            </div>
+            <div class="zurg">
+                <div class="small-img-zurag">
+                    <div class="video-link"><a href="#"></a>
+                    <div class="small-img">
+                        <img src="har.jpg">
+                        <video width="800" height="600" controls>
+                        <source src="Nike Running _ Spec Ad.mp4" type="video/mp4">
+                    </div>
+                    <p>howdjkfhasdhfafbr <br>skdjfskajfhsdkjfhas</p>
+                </div>
+            </div>
+            <div class="zurg">
+                <div class="small-img-zurag">
+                    <div class="video-link"><a href="#"></a>
+                    <div class="small-img">
+                        <img src="images (6.jpg">
+                        <video width="800" height="600" controls>
+                        <source src="Only Basketball _ Nike.mp4" type="video/mp4">
+                    </div>
+                    <p>howdjkfhasdhfafbr <br>skdjfskajfhsdkjfhas</p>
+                </div>
+            </div>
+            <div class="zurg">
+                <div class="small-img-zurag">
+                    <div class="video-link"><a href="#"></a>
+                    <div class="small-img">
+                        <img src="4321.png">
+                        <video width="800" height="600" controls>
+                        <source src="SNKRS - Cult Classics _ Three Way Call _ Nike.mp4" type="video/mp4">
+                    </div>
+                    <p>howdjkfhasdhfafbr <br>skdjfskajfhsdkjfhas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          
+            var videoLinks = document.querySelectorAll(".video-link");
+    
+            
+            videoLinks.forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    
+                    event.preventDefault();
+                    var video = this.querySelector("video");
+    
+                    
+                    video.play();
+                });
+            });
+        });
+    </script>   
+    <a href="biydaalt.html" title="back"><button style="margin-left: 45%; border-radius: 50px; color:red; font-size: 25px; background-color: lightgreen;">biydaalt</button></a>
+    
+</body>
+</html>
